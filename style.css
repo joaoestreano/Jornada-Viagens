@@ -52,9 +52,61 @@ h1 {
     font-family: "Montserrat";
     font-weight: var(--title-weight);
     color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 :root {
     --primary-color: #BF0101;
     --secondary-color: #B81515;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+div {
+    width: 33%;
+    height: 200px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+div p {
+    font-size: 1.5em;
+    /*=30 x 1.5 = 45px*/
+}
+
+html {
+    font-size: 16px;
+}
+
+div {
+    width: 12.5rem;
+    /*12.5 x 16 = 200*/
+}
+
+div p {
+    font-size: 1.5rem;
+    /*16 x 1.5 = 24px*/
+}
+
+div {
+    width: 50vw;
+    height: 100vh;
+    display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background: lightblue;
+  }
+}
+.card {
+  width: 50%;
+  background-color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
 }
