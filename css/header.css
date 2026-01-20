@@ -1,24 +1,46 @@
 header {
-  background-color: var(--brackground-tertiary-color);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 38px 48px;
+    background-color: var(--brackground-tertiary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 38px 48px;
+    position: relative;
 }
 
 .logo {
-  display: inline-block;
-  width: 68px;
-  height: 64px;
-}
-.navigation-menu {
-  margin-top: 24px;
-}
-nav {
-  display: none;
+    display: inline-block;
+    width: 68px;
+    height: 64px;
 }
 
-input[type="checkbox"]:checked ~ nav {
+.navigation-menu {
+    margin-top: 24px;
+}
+
+nav {
+    display: none;
+}
+
+input[type="checkbox"]:checked~nav {
     display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--brackground-tertiary-color);
+}
+
+.list-links {
+    list-style: none;
+    font-family: "monserrat";
+}
+
+.list-links li a {
+    color: var(--text-secondary-color);
+    text-decoration: none;
+}
+
+.list-links li {
+    margin: 16px 0;
 }
