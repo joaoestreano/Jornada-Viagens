@@ -110,3 +110,10 @@ div {
     width: 100%;
   }
 }
+
+@import url(global.css);
+@import url(header.css);
+
+header {
+    background-color: black;
+}
