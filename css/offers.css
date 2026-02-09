@@ -27,8 +27,9 @@ body {
 .card header {
     display: block;
     background-color: transparent;
-    padding: 24px 16px;
     position: static;
+    padding: 0;
+    margin-bottom: 24px;
 }
 
 .card {
@@ -57,4 +58,32 @@ body {
     font-size: 32px;
     margin-top: 24px;
     display: inline-block;
+}
+
+.button {
+    width: 280px;
+    height: 64px;
+    color: var(--text-secondary-color);
+    font-weight: var(--title-weight);
+    font-size: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 64px;
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 588px;
+        height: 308px;
+    }
+
+    .card header h3 {
+        font-size: 48px;
+    }
+
+    .card header span {
+        font-size: 40px;
+    }
 }
