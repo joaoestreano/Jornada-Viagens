@@ -1,4 +1,4 @@
-.main-header {
+header {
   background-color: var(--background-tertiary-color);
   display: flex;
   flex-direction: row;
@@ -76,7 +76,7 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
-  .main-header {
+  header {
     padding: 38px 120px;
   }
   .logo {
@@ -95,7 +95,7 @@ nav {
 }
 
 @media screen and (min-width: 1920px) {
-  .main-header {
+  header {
     padding: 38px 160px;
   }
 }
